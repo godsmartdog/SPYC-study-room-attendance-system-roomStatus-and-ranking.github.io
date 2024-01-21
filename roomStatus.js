@@ -1,5 +1,5 @@
 const supabaseUrl = 'https://puisbpdboykphyeexnrh.supabase.co';
-const supabaseKey = 'YOUR_SUPABASE_KEY';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB1aXNicGRib3lrcGh5ZWV4bnJoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDU2NTUwMDEsImV4cCI6MjAyMTIzMTAwMX0.Sl_aehSlK5xgim5BoGfD4IAezVMuKEi77XmUW2_yRWw';
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const tableBody = document.getElementById('roomTable').getElementsByTagName('tbody')[0];
