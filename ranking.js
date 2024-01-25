@@ -6,8 +6,8 @@ const tableBody = document.getElementById('rankingTable').getElementsByTagName('
 
 async function fetchRankingData() {
   const { data, error } = await supabase
-    .from('room_status')
-    .select('name, total_time')
+    .from('ranking')
+    .select('attendee_id, total_time')
     .order('total_time', { ascending: true });
 
   if (error) {
