@@ -11,7 +11,7 @@ const tableBody = document.getElementById('rankingTable').getElementsByTagName('
   
   const { data, error } = await supabase
     .from('ranking')
-    .select('attendee_id, total_time')
+    .select('attendee_Id, total_time')
     .order('total_time', { ascending: true });
 
   if (error) {
