@@ -23,12 +23,12 @@ async function fetchRoomStatus() {
     const roomIdCell = document.createElement('td');
     const attendeeIdCell = document.createElement('td');
     const checkInCell = document.createElement('td');
-    const checkOutCell = document.createElement('td');
+ 
 
     roomIdCell.textContent = status.room_id;
     attendeeIdCell.textContent = status.attendee_id;
     checkInCell.textContent = status.check_in_time;
-    checkOutCell.textContent = status.check_out_time || 'N/A';
+    
 
     row.appendChild(roomIdCell);
     row.appendChild(attendeeIdCell);
