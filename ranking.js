@@ -34,7 +34,7 @@ const tableBody = document.getElementById('rankingTable').getElementsByTagName('
       const nameCell = row.insertCell();
       const timeCell = row.insertCell();
       rankCell.textContent = index + 1;
-      nameCell.textContent = attendee.name;
+      nameCell.textContent = attendee.attendee_Id;
       timeCell.textContent = attendee.total_time;
     });
   }
