@@ -20,20 +20,20 @@ async function fetchRoomStatus() {
   // Populate the table based on the room status data
   roomStatusData.forEach((status) => {
     const row = document.createElement('tr');
-    const roomIdCell = document.createElement('td');
+    
     const attendeeIdCell = document.createElement('td');
     const checkInCell = document.createElement('td');
  
 
-    roomIdCell.textContent = status.room_id;
+    
     attendeeIdCell.textContent = status.attendee_id;
     checkInCell.textContent = status.check_in_time;
     
 
-    row.appendChild(roomIdCell);
+   
     row.appendChild(attendeeIdCell);
     row.appendChild(checkInCell);
-    row.appendChild(checkOutCell);
+    
 
     tableBody.appendChild(row);
   });
