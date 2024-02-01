@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Ranking</title>
   <style>
-    /* CSS styles for ranking page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+      padding-top: 20px;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      color: #333333;
+    }
+
+    a {
+      color: #333333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links-container {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #rewardsList {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 40px;
+    }
   </style>
 </head>
+
 <body>
   <h1>Ranking</h1>
-  
+
   <table id="rankingTable">
     <thead>
       <tr>
@@ -22,16 +73,26 @@
     </tbody>
   </table>
 
-  <p>Go to <a href="index.html">Room Status</a></p>
-  <p>Go to <a href="rewards_list.html">Rewards_list</a></p>
-  <table id="rankingTable">
-    <tbody></tbody>
-  </table>
-  
-  <p id="rewardsList">Rewards List Content</p>
-  <div id="download-container"></div>
+  <div class="links-container">
+    <p>Go to <a href="index.html">Room Status</a></p>
+    <p>Go to <a href="rewards_list.html">Rewards List</a></p>
+  </div>
 
+  <table id="rewardsTable" style="width: 80%; margin: 20px auto;">
+    
+     file download
+        
+      
+      <button id="file_generate" type="submit">generate</button>
+    
+    <tbody>
+      <div id="download-container" style="text-align: center; margin-bottom: 40px;"></div>
+    </tbody>
+  </table>
+
+  
 
   <script type="module" src="ranking.js"></script>
 </body>
+
 </html>

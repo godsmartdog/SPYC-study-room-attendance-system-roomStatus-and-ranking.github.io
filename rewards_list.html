@@ -1,14 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Attendees with Total Time >= 6</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+      padding-top: 20px;
+    }
+
+    section {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+    }
+
+    p {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    a {
+      color: #333333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+  </style>
 </head>
+
 <body>
   <h1>Attendees with Total Time >= 6</h1>
-  <section id="attendeeSection"></section>
+
+  <section id="attendeeSection">
+    <ul id="attendeeList"></ul>
+  </section>
+
   <p>Go to <a href="index.html">Room Status</a></p>
   <p>Go to <a href="ranking.html">Ranking</a></p>
 
-  <script type = "module" src="rewards_list.js"></script>
+  <script type="module" src="rewards_list.js"></script>
 </body>
+
 </html>

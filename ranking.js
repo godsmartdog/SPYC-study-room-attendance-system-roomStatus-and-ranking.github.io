@@ -91,7 +91,10 @@ function checkFileGeneration() {
   generateTextFile();
   }
 }
-
+const generateButton = document.getElementById('file_generate');
+generateButton.addEventListener('click', async (event) => {
+  generateTextFile();
+});
 // Execute checkFileGeneration each day
 setInterval(checkFileGeneration, 1000*60*60*24); // Executes every day
 // Fetch ranking data initially

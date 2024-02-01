@@ -1,19 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Room Status</title>
   <style>
-    /* CSS styles for room status page */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+      padding-top: 20px;
+    }
+
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-collapse: collapse;
+      background-color: #ffffff;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    th,
+    td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #cccccc;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      color: #333333;
+    }
+
+    a {
+      color: #333333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .links-container {
+      text-align: center;
+      margin-top: 20px;
+    }
   </style>
 </head>
+
 <body>
   <h1>Room Status</h1>
-  
+
   <table id="roomTable">
     <thead>
       <tr>
         <th>Name</th>
-        <th>check_in_time</th>
+        <th>Check-in Time</th>
       </tr>
     </thead>
     <tbody>
@@ -21,10 +66,12 @@
     </tbody>
   </table>
 
-  <p>Go to <a href="ranking.html">Ranking</a></p>
-  <p>Go to <a href="rewards_list.html">Rewards_list</a></p>
+  <div class="links-container">
+    <p>Go to <a href="ranking.html">Ranking</a></p>
+    <p>Go to <a href="rewards_list.html">Rewards List</a></p>
+  </div>
 
- 
-  <script type ="module" src="roomStatus.js"></script>
+  <script type="module" src="roomStatus.js"></script>
 </body>
+
 </html>
